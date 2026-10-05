@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <title>Abang Usedcar — Kereta Terpakai Murah</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="_ds/utopia-lead-gen-design-system-f515b42c-b9fc-4521-be7e-23c04829b0fe/tokens/fonts.css">
+  <link rel="stylesheet" href="_ds/utopia-lead-gen-design-system-f515b42c-b9fc-4521-be7e-23c04829b0fe/tokens/colors.css">
+  <link rel="stylesheet" href="_ds/utopia-lead-gen-design-system-f515b42c-b9fc-4521-be7e-23c04829b0fe/tokens/typography.css">
+  <link rel="stylesheet" href="_ds/utopia-lead-gen-design-system-f515b42c-b9fc-4521-be7e-23c04829b0fe/tokens/spacing.css">
+  <link rel="stylesheet" href="_ds/utopia-lead-gen-design-system-f515b42c-b9fc-4521-be7e-23c04829b0fe/tokens/themes.css">
+  <link rel="stylesheet" href="_ds/utopia-lead-gen-design-system-f515b42c-b9fc-4521-be7e-23c04829b0fe/tokens/base.css">
+  <link rel="stylesheet" href="_ds/utopia-lead-gen-design-system-f515b42c-b9fc-4521-be7e-23c04829b0fe/styles.css">
+  <script src="_ds/utopia-lead-gen-design-system-f515b42c-b9fc-4521-be7e-23c04829b0fe/_ds_bundle.js"></script>
+  <script src="./image-slot.js"></script>
+  <style>
+    body{margin:0;background:#fff;font-family:var(--font-text);color:var(--text-body)}
+    a{color:#A51002}
+    a:hover{color:#7A0C01}
+  </style>
+</helmet>
+
+<div data-screen-label="ABG Landing" style="--brand-primary:#1A1A1A;--brand-accent:#A51002;--brand-tint:#FEF8F4;--brand-tint-2:#F7F7F7;--brand-dark:#7A0C01;--brand-highlight:#F7E41C;--text-heading:#1A1A1A;--surface-tint:#FEF8F4;--surface-tint-2:#F7F7F7;--surface-dark:#7A0C01;--text-accent:#A51002;background:#fff;min-height:100vh">
+
+  <sc-if value="{{ showPromo }}" hint-placeholder-val="{{ true }}">
+    <x-import component-from-global-scope="UtopiaLeadGenDesignSystem_f515b4.PromoBar" text="Loan Mudah Lulus · Deposit Rendah" link-text="WhatsApp Kami" href="{{ waHref }}" bg="#A51002" hint-size="100%,34px"></x-import>
+  </sc-if>
+
+  <x-import component-from-global-scope="UtopiaLeadGenDesignSystem_f515b4.SiteHeader" name="Abang" name-accent="Usedcar" logo-src="assets/abg-logo.jpg" sticky="{{ true }}" hint-size="100%,64px"></x-import>
+
+  <section data-screen-label="Hero" style="background:var(--brand-tint);padding:28px var(--gutter-mobile) 0;text-align:center">
+    <div style="max-width:560px;margin:0 auto;display:flex;flex-direction:column;align-items:center;gap:14px">
+      <div style="font-size:var(--fs-small);font-weight:600;color:var(--brand-primary)">Semak Kelayakan Loan Dalam 5 Minit Melalui <span style="color:var(--wa-green);font-weight:inherit">WhatsApp.</span></div>
+      <h1 style="margin:0;font-family:var(--font-display);font-weight:800;font-size:var(--fs-display);line-height:var(--lh-tight);color:var(--text-heading);text-wrap:balance"><span style="color:var(--brand-accent);font-weight:inherit">Kereta Terpakai Murah</span> Bulanan Dari RM299!</h1>
+      <p style="margin:0;font-size:var(--fs-small);line-height:1.55;text-wrap:pretty">Semua kereta diperiksa, servis penuh dan siap untuk dipandu. Harga telus, tiada caj tersembunyi.</p>
+      <div style="display:grid;gap:8px;align-self:stretch;max-width:340px;margin:0 auto;text-align:left">
+        <div style="display:flex;gap:10px;align-items:center;font-size:var(--fs-small);font-weight:700;color:var(--ink-900)"><span style="display:flex;width:20px;height:20px;flex-shrink:0"><x-import component-from-global-scope="UtopiaLeadGenDesignSystem_f515b4.Icon" name="circle-check" size="{{ 20 }}" color="var(--brand-accent)" hint-size="20px,20px"></x-import></span><span>Loan Mudah Lulus, Deposit Rendah</span></div>
+        <div style="display:flex;gap:10px;align-items:center;font-size:var(--fs-small);font-weight:700;color:var(--ink-900)"><span style="display:flex;width:20px;height:20px;flex-shrink:0"><x-import component-from-global-scope="UtopiaLeadGenDesignSystem_f515b4.Icon" name="circle-check" size="{{ 20 }}" color="var(--brand-accent)" hint-size="20px,20px"></x-import></span><span>Pemeriksaan 150 Titik Setiap Kereta</span></div>
+        <div style="display:flex;gap:10px;align-items:center;font-size:var(--fs-small);font-weight:700;color:var(--ink-900)"><span style="display:flex;width:20px;height:20px;flex-shrink:0"><x-import component-from-global-scope="UtopiaLeadGenDesignSystem_f515b4.Icon" name="circle-check" size="{{ 20 }}" color="var(--brand-accent)" hint-size="20px,20px"></x-import></span><span>Warranty Enjin &amp; Gearbox Disediakan</span></div>
+      </div>
+      <div style="margin-top:6px;align-self:stretch;white-space:nowrap">
+        <x-import component-from-global-scope="UtopiaLeadGenDesignSystem_f515b4.WhatsAppCTA" label="Whatsapp Now" href="{{ waHref }}" phone="{{ phone }}" hint-size="230px,84px"></x-import>
+      </div>
+    </div>
+    <div style="max-width:720px;margin:20px auto 0;aspect-ratio:16/10;position:relative">
+      <image-slot id="hero-car" shape="rect" placeholder="Gambar hero — kereta / showroom"></image-slot>
+    </div>
+  </section>
+
+  <x-import component-from-global-scope="UtopiaLeadGenDesignSystem_f515b4.TrustStrip" rating="4.9" text="Dipercayai ribuan pembeli di Malaysia" bg="#1A1A1A" hint-size="100%,64px"></x-import>
+
+  <x-import component-from-global-scope="UtopiaLeadGenDesignSystem_f515b4.Section" bg="white" gap="{{ 14 }}" hint-size="100%,600px">
+    <x-import component-from-global-scope="UtopiaLeadGenDesignSystem_f515b4.SectionHeading" title="Kenapa Beli Dengan Abang?" sub="Beli kereta terpakai tanpa risau. Kami uruskan semuanya dari loan sampai tukar nama." hint-size="100%,90px"></x-import>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;align-self:stretch">
+      <x-import component-from-global-scope="UtopiaLeadGenDesignSystem_f515b4.FeatureCard" variant="card" icon="wallet" title="Loan Mudah Lulus" body="Bank &amp; loan kedai. Gaji rendah, kerja sendiri atau baru kerja boleh cuba." hint-size="100%,150px"></x-import>
+      <x-import component-from-global-scope="UtopiaLeadGenDesignSystem_f515b4.FeatureCard" variant="card" icon="shield-check" title="Kereta Diperiksa" body="Setiap unit melalui pemeriksaan penuh. Tiada kereta banjir, tiada kereta potong." hint-size="100%,150px"></x-import>
+      <x-import component-from-global-scope="UtopiaLeadGenDesignSystem_f515b4.FeatureCard" variant="card" icon="wrench" title="Warranty Disediakan" body="Warranty enjin &amp; gearbox supaya anda pandu dengan tenang." hint-size="100%,150px"></x-import>
+      <x-import component-from-global-scope="UtopiaLeadGenDesignSystem_f515b4.FeatureCard" variant="card" icon="heart-handshake" title="Trade-In Kereta Lama" body="Tukar kereta lama anda dengan harga terbaik terus jadi deposit." hint-size="100%,150px"></x-import>
+    </div>
+  </x-import>
+
+  <div id="stok" data-screen-label="Stok">
+    <x-import component-from-global-scope="UtopiaLeadGenDesignSystem_f515b4.Section" bg="tint" gap="{{ 16 }}" hint-size="100%,900px">
+      <h2 style="margin:0;font-family:var(--font-display);font-weight:800;font-size:var(--fs-h2);line-height:var(--lh-tight);color:var(--text-heading);text-wrap:balance;max-width:560px">Stok <span style="color:var(--brand-accent);font-weight:inherit">Kereta Terpakai</span> Terkini</h2>
+      <p style="margin:0;font-size:var(--fs-small);line-height:1.5;max-width:560px">Stok bertukar setiap minggu. WhatsApp kami untuk unit yang anda cari.</p>
+      <div style="align-self:stretch;max-width:560px;margin:0 auto;width:100%">
+        <x-import component-from-global-scope="UtopiaLeadGenDesignSystem_f515b4.PillTabs" tabs="{{ tabs }}" value="{{ tab }}" on-change="{{ setTab }}" hint-size="100%,76px"></x-import>
+      </div>
+      <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(165px,1fr));gap:10px;align-self:stretch">
+        <sc-for list="{{ cars }}" as="car" hint-placeholder-count="6">
+          <div style="background:#fff;border:1px solid var(--border-card);border-radius:var(--radius-sm);padding:8px;display:flex;flex-direction:column;gap:8px;text-align:left;min-width:0">
+            <div style="position:relative;aspect-ratio:4/3;border-radius:6px;overflow:hidden">
+              <image-slot id="car-{{ car.id }}" shape="rounded" radius="6" placeholder="Gambar kereta"></image-slot>
+              <div style="position:absolute;top:6px;left:6px;background:#1A1A1A;color:#fff;font-family:var(--font-display);font-weight:700;font-size:10px;padding:3px 7px;border-radius:3px;pointer-events:none">{{ car.year }}</div>
+            </div>
+            <div style="font-family:var(--font-display);font-weight:700;font-size:15px;color:var(--ink-900);line-height:1.25">{{ car.name }}</div>
+            <div style="display:flex;flex-wrap:wrap;gap:4px">
+              <div style="font-size:10px;color:var(--text-muted);background:var(--gray-100);padding:4px 6px;border-radius:3px">{{ car.km }}</div>
+              <div style="font-size:10px;color:var(--text-muted);background:var(--gray-100);padding:4px 6px;border-radius:3px">{{ car.trans }}</div>
+            </div>
+            <div style="display:flex;align-items:baseline;gap:4px;font-family:var(--font-display);color:var(--ink-900);flex-wrap:wrap">
+              <span style="font-size:11px">{{ car.prefix }}</span>
+              <span style="font-weight:800;font-size:18px;color:var(--brand-accent)">{{ car.main }}</span>
+              <span style="font-weight:700;font-size:12px">{{ car.unit }}</span>
+            </div>
+            <div style="font-size:11px;color:var(--text-muted);margin-top:-4px">{{ car.alt }}</div>
+            <x-import component-from-global-scope="UtopiaLeadGenDesignSystem_f515b4.WhatsAppButton" size="card" full-width="{{ true }}" label="Whatsapp Now" href="{{ car.href }}" hint-size="100%,38px"></x-import>
+          </div>
+        </sc-for>
+      </div>
+      <x-import component-from-global-scope="UtopiaLeadGenDesignSystem_f515b4.WhatsAppCTA" label="Tanya Stok Lain" href="{{ waHref }}" phone="{{ phone }}" hint-size="230px,84px"></x-import>
+    </x-import>
+  </div>
+
+  <x-import component-from-global-scope="UtopiaLeadGenDesignSystem_f515b4.Section" bg="accent" gap="{{ 14 }}" hint-size="100%,520px">
+    <x-import component-from-global-scope="UtopiaLeadGenDesignSystem_f515b4.SectionHeading" tone="dark" title="Bawa Balik Kereta Dalam 3 Langkah." sub="Proses cepat dan mudah. Kebanyakan pelanggan ambil kunci dalam masa beberapa hari." hint-size="100%,90px"></x-import>
+    <div style="display:grid;gap:10px;align-self:stretch;max-width:560px;margin:0 auto;width:100%">
+      <x-import component-from-global-scope="UtopiaLeadGenDesignSystem_f515b4.StepCard" variant="ring" n="{{ 1 }}" title="WhatsApp Kami" body="Beritahu kereta yang anda minat dan bajet bulanan anda." hint-size="100%,80px"></x-import>
+      <x-import component-from-global-scope="UtopiaLeadGenDesignSystem_f515b4.StepCard" variant="ring" n="{{ 2 }}" title="Semak Loan &amp; Test Drive" body="Hantar IC dan slip gaji. Kami semak kelayakan dan atur test drive." hint-size="100%,80px"></x-import>
+      <x-import component-from-global-scope="UtopiaLeadGenDesignSystem_f515b4.StepCard" variant="ring" n="{{ 3 }}" title="Ambil Kunci" body="Loan lulus, tukar nama &amp; insurans kami uruskan. Terus bawa balik." hint-size="100%,80px"></x-import>
+    </div>
+    <x-import component-from-global-scope="UtopiaLeadGenDesignSystem_f515b4.WhatsAppCTA" tone="dark" label="Whatsapp Now" href="{{ waHref }}" phone="{{ phone }}" hint-size="230px,84px"></x-import>
+  </x-import>
+
+  <x-import component-from-global-scope="UtopiaLeadGenDesignSystem_f515b4.Section" bg="white" gap="{{ 16 }}" hint-size="100%,700px">
+    <h2 style="margin:0;font-family:var(--font-display);font-weight:800;font-size:var(--fs-h2);line-height:var(--lh-tight);color:var(--text-heading);text-wrap:balance;max-width:560px">Pelanggan <span style="color:var(--brand-accent);font-weight:inherit">Abang Usedcar</span> Yang Dah Bawa Balik Kereta</h2>
+    <div style="display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:4px;align-self:stretch;max-width:720px;margin:0 auto;width:100%">
+      <sc-for list="{{ gallery }}" as="g" hint-placeholder-count="9">
+        <div style="aspect-ratio:{{ g.ratio }};grid-column:{{ g.span }};position:relative;overflow:hidden;background:#eee">
+          <img src="{{ g.src }}" alt="Pelanggan Abang Usedcar" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:{{ g.pos }}"></img>
+        </div>
+      </sc-for>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px;align-self:stretch">
+      <x-import component-from-global-scope="UtopiaLeadGenDesignSystem_f515b4.ReviewCard" text="Gaji saya kecil tapi Abang tolong carikan loan sampai lulus. Kereta pun elok, takde masalah sampai sekarang." name="Aiman R." location="Shah Alam" hint-size="100%,150px"></x-import>
+      <x-import component-from-global-scope="UtopiaLeadGenDesignSystem_f515b4.ReviewCard" text="Harga telus, tak ada caj tambahan masa tandatangan. Trade-in kereta lama pun dapat harga ok." name="Nurul H." location="Kajang" hint-size="100%,150px"></x-import>
+      <x-import component-from-global-scope="UtopiaLeadGenDesignSystem_f515b4.ReviewCard" text="WhatsApp pagi, petang dah test drive. Seminggu lepas tu dah bawa balik. Recommended!" name="Kumar S." location="Klang" hint-size="100%,150px"></x-import>
+    </div>
+    <x-import component-from-global-scope="UtopiaLeadGenDesignSystem_f515b4.WhatsAppCTA" label="Whatsapp Now" href="{{ waHref }}" phone="{{ phone }}" hint-size="230px,84px"></x-import>
+  </x-import>
+
+  <x-import component-from-global-scope="UtopiaLeadGenDesignSystem_f515b4.Section" bg="dark" gap="{{ 8 }}" hint-size="100%,520px">
+    <x-import component-from-global-scope="UtopiaLeadGenDesignSystem_f515b4.SectionHeading" tone="dark" title="Soalan Lazim" hint-size="100%,40px"></x-import>
+    <div style="align-self:stretch;max-width:640px;margin:0 auto;width:100%">
+      <x-import component-from-global-scope="UtopiaLeadGenDesignSystem_f515b4.FAQItem" question="Saya blacklist / CTOS, boleh buat loan?" answer="Boleh cuba. Kami ada pilihan bank dan loan kedai. WhatsApp kami untuk semakan percuma." default-open="{{ true }}" hint-size="100%,60px"></x-import>
+      <x-import component-from-global-scope="UtopiaLeadGenDesignSystem_f515b4.FAQItem" question="Berapa deposit yang perlu?" answer="Bergantung pada kereta dan profil loan. Ada unit dengan deposit serendah RM0 untuk yang layak." hint-size="100%,60px"></x-import>
+      <x-import component-from-global-scope="UtopiaLeadGenDesignSystem_f515b4.FAQItem" question="Dokumen apa yang diperlukan?" answer="Salinan IC, lesen memandu, 3 bulan slip gaji dan penyata bank. Kerja sendiri: SSM dan penyata bank 6 bulan." hint-size="100%,60px"></x-import>
+      <x-import component-from-global-scope="UtopiaLeadGenDesignSystem_f515b4.FAQItem" question="Boleh trade-in kereta lama?" answer="Boleh. Hantar gambar dan nombor plat melalui WhatsApp, kami bagi harga dalam hari yang sama." hint-size="100%,60px"></x-import>
+    </div>
+    <div style="margin-top:16px;white-space:nowrap">
+      <x-import component-from-global-scope="UtopiaLeadGenDesignSystem_f515b4.WhatsAppCTA" tone="dark" label="Whatsapp Now" href="{{ waHref }}" phone="{{ phone }}" hint-size="230px,84px"></x-import>
+    </div>
+  </x-import>
+
+  <x-import component-from-global-scope="UtopiaLeadGenDesignSystem_f515b4.Section" bg="white" gap="{{ 16 }}" hint-size="100%,420px">
+    <x-import component-from-global-scope="UtopiaLeadGenDesignSystem_f515b4.SectionHeading" title="Tonton Video Kami" hint-size="100%,40px"></x-import>
+    <div style="align-self:stretch;max-width:720px;margin:0 auto;width:100%;aspect-ratio:16/9;border-radius:15px;overflow:hidden;background:#000;box-shadow:0 1px 4px rgba(0,0,0,.3)">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/jzUibfTQLD0?si=XExBoU-p8d-Lp7u8&amp;start=15" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen style="width:100%;height:100%;border:0;display:block"></iframe>
+    </div>
+  </x-import>
+
+  <x-import component-from-global-scope="UtopiaLeadGenDesignSystem_f515b4.Section" bg="tint" gap="{{ 16 }}" hint-size="100%,600px">
+    <x-import component-from-global-scope="UtopiaLeadGenDesignSystem_f515b4.SectionHeading" title="Lawat Showroom Kami" sub="Datang tengok sendiri, test drive dan bincang loan terus dengan team kami." hint-size="100%,90px"></x-import>
+    <a href="https://www.google.com/maps?q=abang+used+car+showroom" target="_blank" rel="noopener" style="display:block;align-self:stretch;max-width:720px;margin:0 auto;width:100%;aspect-ratio:16/9;position:relative;border-radius:15px;overflow:hidden">
+      <img src="uploads/image_image_20231221014757_4JQnRPgh.webp" alt="Showroom Abang Usedcar" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block"></img>
+    </a>
+    <div style="display:flex;gap:10px;justify-content:center;flex-wrap:wrap;align-self:stretch">
+      <a href="https://www.google.com/maps?q=abang+used+car+showroom" target="_blank" rel="noopener" style="display:flex;align-items:center;gap:10px;padding:10px 18px;background:#fff;border:2px solid #dadce0;border-radius:10px;color:#202124;font-weight:700;font-size:15px;text-decoration:none" style-hover="border-color:#4285F4">
+        <svg width="26" height="26" viewBox="0 0 24 24"><path d="M12 1.5a8 8 0 0 0-8 8c0 5.6 8 13 8 13s8-7.4 8-13a8 8 0 0 0-8-8z" fill="#EA4335"></path><path d="M12 1.5a8 8 0 0 0-5.7 2.4l5.7 6.6z" fill="#4285F4"></path><path d="M20 9.5a8 8 0 0 0-2.3-5.6L12 10.500z" fill="#FBBC04"></path><path d="M12 22.5s8-7.4 8-13c0-1-.2-2-.5-2.800L12 10.500z" fill="#34A853"></path><circle cx="12" cy="9.500" r="3" fill="#fff"></circle></svg>
+        <span>Google Maps</span>
+      </a>
+      <a href="https://waze.com/ul?q=abang%20used%20car%20showroom&amp;navigate=yes" target="_blank" rel="noopener" style="display:flex;align-items:center;gap:10px;padding:10px 18px;background:#fff;border:2px solid #dadce0;border-radius:10px;color:#202124;font-weight:700;font-size:15px;text-decoration:none" style-hover="border-color:#33CCFF">
+        <svg width="26" height="26" viewBox="0 0 24 24"><path d="M12 2.500c-4.700 0-8.500 3.600-8.500 8.200 0 1.800.6 3.400 1.600 4.700-.1 1.200-.6 2.200-1.500 3 1.700.2 3.100-.3 4.100-1.100 1.300.7 2.800 1.100 4.300 1.100 4.700 0 8.500-3.700 8.500-8.200S16.700 2.500 12 2.500z" fill="#33CCFF" stroke="#1a1a1a" stroke-width="1.200"></path><circle cx="9" cy="10" r="1.200" fill="#1a1a1a"></circle><circle cx="15" cy="10" r="1.200" fill="#1a1a1a"></circle><path d="M9 13.200c1.700 1.300 4.300 1.300 6 0" fill="none" stroke="#1a1a1a" stroke-width="1.200" stroke-linecap="round"></path></svg>
+        <span>Waze</span>
+      </a>
+    </div>
+    <div style="display:grid;gap:10px;max-width:420px;text-align:left;align-self:center">
+      <div style="display:flex;gap:10px;align-items:flex-start;font-size:var(--fs-small);line-height:1.45"><span style="display:flex;width:20px;height:20px;flex-shrink:0"><x-import component-from-global-scope="UtopiaLeadGenDesignSystem_f515b4.Icon" name="map-pin" size="{{ 20 }}" color="var(--brand-accent)" hint-size="20px,20px"></x-import></span><span><b>Abang Usedcar Sdn Bhd</b><br>[Alamat showroom], [Bandar], [Negeri]</span></div>
+      <div style="display:flex;gap:10px;align-items:flex-start;font-size:var(--fs-small);line-height:1.45"><span style="display:flex;width:20px;height:20px;flex-shrink:0"><x-import component-from-global-scope="UtopiaLeadGenDesignSystem_f515b4.Icon" name="clock" size="{{ 20 }}" color="var(--brand-accent)" hint-size="20px,20px"></x-import></span><span>Isnin – Ahad, 10 pagi – 7 malam</span></div>
+    </div>
+    <x-import component-from-global-scope="UtopiaLeadGenDesignSystem_f515b4.WhatsAppCTA" label="Whatsapp Now" href="{{ waHref }}" phone="{{ phone }}" hint-size="230px,84px"></x-import>
+  </x-import>
+
+  <x-import component-from-global-scope="UtopiaLeadGenDesignSystem_f515b4.SiteFooter" name="Abang" name-accent="Usedcar" phone="{{ phone }}" company="Abang Usedcar Sdn Bhd" address="[Alamat showroom], [Bandar], [Negeri]" hint-size="100%,220px"></x-import>
+
+  <div style="background:#000;padding:0 20px 28px;display:flex;flex-direction:column;align-items:center;gap:12px;margin-top:-1px">
+    <div style="color:#fff;font:700 13px 'Wix Madefor Text',sans-serif">Ikuti Kami</div>
+    <div style="display:flex;justify-content:center;gap:14px">
+      <a href="https://www.facebook.com/AbangUsedCar/" target="_blank" rel="noopener" aria-label="Facebook" style="width:46px;height:46px;border:1.5px solid rgba(255,255,255,.5);border-radius:50px;display:flex;align-items:center;justify-content:center;color:#fff;text-decoration:none" style-hover="background:#fff;color:#000;borderColor:#fff">
+        <x-import component-from-global-scope="UtopiaLeadGenDesignSystem_f515b4.Icon" name="facebook" size="22" hint-size="22px,22px"></x-import>
+      </a>
+      <a href="https://www.instagram.com/abangusedcar/" target="_blank" rel="noopener" aria-label="Instagram" style="width:46px;height:46px;border:1.5px solid rgba(255,255,255,.5);border-radius:50px;display:flex;align-items:center;justify-content:center;color:#fff;text-decoration:none" style-hover="background:#fff;color:#000;borderColor:#fff">
+        <x-import component-from-global-scope="UtopiaLeadGenDesignSystem_f515b4.Icon" name="instagram" size="22" hint-size="22px,22px"></x-import>
+      </a>
+      <a href="https://www.tiktok.com/@abangusedcar.official" target="_blank" rel="noopener" aria-label="TikTok" style="width:46px;height:46px;border:1.5px solid rgba(255,255,255,.5);border-radius:50px;display:flex;align-items:center;justify-content:center;color:#fff;text-decoration:none" style-hover="background:#fff;color:#000;borderColor:#fff">
+        <x-import component-from-global-scope="UtopiaLeadGenDesignSystem_f515b4.Icon" name="brand-tiktok" size="20" hint-size="20px,20px"></x-import>
+      </a>
+      <a href="https://www.youtube.com/@abangusedcar" target="_blank" rel="noopener" aria-label="YouTube" style="width:46px;height:46px;border:1.5px solid rgba(255,255,255,.5);border-radius:50px;display:flex;align-items:center;justify-content:center;color:#fff;text-decoration:none" style-hover="background:#fff;color:#000;borderColor:#fff">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.6 12 3.6 12 3.6s-7.5 0-9.4.5A3 3 0 0 0 .5 6.2C0 8.1 0 12 0 12s0 3.9.5 5.8a3 3 0 0 0 2.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.1c.5-1.9.5-5.8.5-5.8s0-3.9-.5-5.8ZM9.6 15.6V8.4l6.2 3.6-6.2 3.6Z"></path></svg>
+      </a>
+    </div>
+  </div>
+
+  <x-import component-from-global-scope="UtopiaLeadGenDesignSystem_f515b4.FloatingWhatsApp" href="{{ waHref }}" hint-size="50px,50px"></x-import>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;phone&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;6012-345 6789&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Contact&quot;},&quot;priceMode&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;bulanan&quot;,&quot;tunai&quot;],&quot;default&quot;:&quot;bulanan&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Stok&quot;},&quot;showPromo&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Layout&quot;}}">
+class Component extends DCLogic {
+  state = { tab: 'Semua' };
+  renderVals() {
+    const phone = this.props.phone ?? '6012-345 6789';
+    const mode = this.props.priceMode ?? 'bulanan';
+    const digits = phone.replace(/\D/g, '');
+    const wa = msg => 'https://wa.me/' + digits + '?text=' + encodeURIComponent(msg);
+    const stock = [
+      { id: 1, name: 'Perodua Myvi 1.5 AV', year: 2019, km: '62,000 km', trans: 'Auto', type: 'Hatchback', cash: 45800, month: 520 },
+      { id: 2, name: 'Honda City 1.5 V', year: 2018, km: '78,000 km', trans: 'Auto', type: 'Sedan', cash: 58900, month: 660 },
+      { id: 3, name: 'Proton X70 1.8 TGDI', year: 2020, km: '55,000 km', trans: 'Auto', type: 'SUV', cash: 79800, month: 890 },
+      { id: 4, name: 'Toyota Vios 1.5 G', year: 2017, km: '91,000 km', trans: 'Auto', type: 'Sedan', cash: 49800, month: 560 },
+      { id: 5, name: 'Perodua Alza 1.5 AV', year: 2018, km: '84,000 km', trans: 'Auto', type: 'MPV', cash: 42800, month: 480 },
+      { id: 6, name: 'Perodua Axia 1.0 G', year: 2019, km: '48,000 km', trans: 'Auto', type: 'Hatchback', cash: 25800, month: 299 }
+    ];
+    const rm = n => 'RM' + n.toLocaleString('en-MY');
+    const tab = this.state.tab;
+    const cars = stock.filter(c => tab === 'Semua' || c.type === tab).map(c => ({
+      ...c,
+      prefix: mode === 'bulanan' ? 'Dari' : 'Harga',
+      main: mode === 'bulanan' ? rm(c.month) : rm(c.cash),
+      unit: mode === 'bulanan' ? '/bulan' : '',
+      alt: mode === 'bulanan' ? 'Harga penuh ' + rm(c.cash) : 'Bulanan dari ' + rm(c.month),
+      href: wa('Hi Abang, saya berminat dengan ' + c.name + ' (' + c.year + '). Masih ada?')
+    }));
+    return {
+      phone,
+      showPromo: this.props.showPromo ?? true,
+      waHref: wa('Hi Abang, saya nak tanya pasal kereta terpakai dan loan.'),
+      tabs: ['Semua', 'Hatchback', 'Sedan', 'MPV', 'SUV'],
+      tab,
+      setTab: t => this.setState({ tab: t }),
+      cars,
+      gallery: [{"src":"uploads/abg-customer-001.jpg","span":"auto","ratio":"1/1","pos":"center 30%"},{"src":"uploads/unnamed.webp","span":"auto","ratio":"1/1","pos":"center 30%"},{"src":"uploads/abg-customer-147.jpg","span":"auto","ratio":"1/1","pos":"center 30%"},{"src":"uploads/abg-customer-191.jpg","span":"auto","ratio":"1/1","pos":"center 30%"},{"src":"uploads/unnamed%20(1).webp","span":"auto","ratio":"1/1","pos":"center 88%"},{"src":"uploads/abg-customer-202.jpg","span":"auto","ratio":"1/1","pos":"center 30%"},{"src":"uploads/abg-customer-207.jpg","span":"auto","ratio":"1/1","pos":"center 30%"},{"src":"uploads/unnamed%20(2).webp","span":"auto","ratio":"1/1","pos":"center 30%"},{"src":"uploads/abg-customer-247.jpg","span":"auto","ratio":"1/1","pos":"center 30%"}]
+    };
+  }
+}
+</script>
+</body>
+</html>
