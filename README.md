@@ -1,25 +1,32 @@
-# CODING AGENTS: READ THIS FIRST
+# Abang Usedcar KL — Landing Page
 
-This is a **handoff bundle** from Claude Design (claude.ai/design).
+Landing page for Abang Usedcar (kereta terpakai, loan mudah lulus). It's built from the Claude Design handoff in `design-handoff/` and uses the Utopia Lead-Gen design system.
 
-A user mocked up designs in HTML/CSS/JS using an AI design tool, then exported this bundle so a coding agent can implement the designs for real.
+- **Stack:** React 18 and the design-system bundle (`src/ds/`). The page is prerendered to static HTML at build time, then hydrated so the stock filter, FAQ and menu work.
+- **Content:** edit `src/config.js` for the phone number (it updates every WhatsApp link), price mode, stock list, gallery and hero image.
+- **Photos:** put files in `public/uploads/` and point `heroImage` or a car's `img` at them. While a value is empty, a dashed placeholder box shows instead.
 
-## What you should do — IMPORTANT
+## Develop
 
-**Read the chat transcripts first.** There are 4 chat transcript(s) in `chats/`. The transcripts show the full back-and-forth between the user and the design assistant — they tell you **what the user actually wants** and **where they landed** after iterating. Don't skip them. The final HTML files are the output, but the chat is where the intent lives.
+```bash
+npm install
+npm run build     # outputs dist/
+npm run preview   # serves dist/ locally
+```
 
-**Read `project/ABG Used Car Landing.dc.html` in full.** The user had this file open when they triggered the handoff, so it's almost certainly the primary design they want built. Read it top to bottom — don't skim. Then **follow its imports**: open every file it pulls in (shared components, CSS, scripts) so you understand how the pieces fit together before you start implementing.
+## Deploy to Cloudflare Pages
 
-**If anything is ambiguous, ask the user to confirm before you start implementing.** It's much cheaper to clarify scope up front than to build the wrong thing.
+**Git integration (recommended):** in Cloudflare dashboard → Workers & Pages → Create → Pages → Connect to Git, pick this repo, then set:
+- Build command: `npm run build`
+- Build output directory: `dist`
 
-## About the design files
+**Or from the CLI:**
 
-The design medium is **HTML/CSS/JS** — these are prototypes, not production code. Your job is to **recreate them pixel-perfectly** in whatever technology makes sense for the target codebase (React, Vue, native, whatever fits). Match the visual output; don't copy the prototype's internal structure unless it happens to fit.
+```bash
+npm run build
+npx wrangler pages deploy dist --project-name abangusedcar-kl
+```
 
-**Don't render these files in a browser or take screenshots unless the user asks you to.** Everything you need — dimensions, colors, layout rules — is spelled out in the source. Read the HTML and CSS directly; a screenshot won't tell you anything they don't.
+## ⚠️ Placeholder content to replace
 
-## Bundle contents
-
-- `README.md` — this file
-- `chats/` — conversation transcripts (read these!)
-- `project/` — the `Abang used car landing page` project files (HTML prototypes, assets, components)
+These came from the design mockup and are made up: the phone number `6012-345 6789`, the showroom address, the opening hours, the 4.9 rating, the customer reviews, the car stock and prices, and "from RM299/month". Also confirm these claims are true before going live: the 150-point inspection, the warranty, the RM0 deposit, and that blacklisted/CTOS buyers can apply.

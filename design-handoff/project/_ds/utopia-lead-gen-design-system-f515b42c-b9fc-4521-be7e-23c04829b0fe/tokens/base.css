@@ -1,0 +1,9 @@
+/* Minimal element defaults so cards and kits pick up the brand type. */
+html{-webkit-text-size-adjust:100%}
+body{margin:0;font-family:var(--font-text);font-size:var(--fs-body);line-height:var(--lh-body);color:var(--text-body);background:var(--surface-page);-webkit-font-smoothing:antialiased}
+h1,h2,h3,h4{font-family:var(--font-display);font-weight:var(--fw-black);line-height:var(--lh-tight);color:var(--text-heading);margin:0;text-wrap:balance}
+p{margin:0;text-wrap:pretty}
+a{color:var(--link)}
+a:hover{color:var(--brand-accent)}
+img{max-width:100%;display:block}
+*,*::before,*::after{box-sizing:border-box}

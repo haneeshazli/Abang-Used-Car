@@ -1,0 +1,47 @@
+/* Spacing, radii, shadows, motion, layout. Values copied from the portfolio audit (Wix builds). */
+:root{
+--space-1:4px;
+--space-2:8px;
+--space-3:12px;
+--space-4:16px;
+--space-5:20px;
+--space-6:24px;
+--space-8:32px;
+--space-10:40px;
+--space-12:48px;
+--space-16:64px;
+
+--gutter-mobile:20px;     /* side padding at 390px */
+--section-y-mobile:48px;  /* vertical rhythm between bands */
+--section-y-desktop:80px;
+--container:980px;        /* Wix content column */
+--mobile-width:390px;
+
+/* Radii */
+--radius-xs:5px;   /* card WhatsApp, outline 'Butiran Lanjut', package cards */
+--radius-cta:7px;  /* the shared WhatsApp button */
+--radius-sm:10px;  /* language selector, secondary */
+--radius-md:15px;  /* product / USP cards */
+--radius-lg:20px;  /* feature cards, gallery */
+--radius-xl:30px;  /* soft service cards (Merry, Ibnu Sina) */
+--radius-pill:50px;/* price pills, nav pill */
+--radius-full:9999px;
+
+/* Shadows — Wix '0 1px 4px' family */
+--shadow-card:0 1px 4px rgba(0,0,0,.21);
+--shadow-card-strong:0 1px 4px rgba(0,0,0,.6);
+--shadow-soft:0 1px 3px rgba(0,0,0,.5);
+--shadow-header:0 0 5px rgba(0,0,0,.25);
+--shadow-float:0 2px 10px rgba(0,0,0,.18);
+--shadow-pill:0 4px 10px rgba(252,92,6,.35);
+
+/* Borders */
+--border-card-width:1px; /* @kind spacing */
+--border-hero-card:3px solid #000; /* @kind other */
+--border-outline-cta:2px; /* @kind spacing */
+
+/* Motion — Wix default: no easing curves, simple 0.2s */
+--ease:ease; /* @kind other */
+--dur-fast:.2s; /* @kind other */
+--dur-med:.4s; /* @kind other */
+}

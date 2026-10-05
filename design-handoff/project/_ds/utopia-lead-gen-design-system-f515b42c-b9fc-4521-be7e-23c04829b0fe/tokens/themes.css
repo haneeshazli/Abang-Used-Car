@@ -1,0 +1,12 @@
+/* Per-site brand themes. Wrap a page (or any subtree) in data-theme="…" to re-skin.
+   Only the --brand-* slots change; WhatsApp green, type and layout stay fixed across the group. */
+[data-theme="lampu"]{--brand-primary:#074E92;--brand-accent:#FF5B00;--brand-tint:#FFFCE1;--brand-tint-2:#D0E8FF;--brand-dark:#000000;--brand-highlight:#F7E41C}
+[data-theme="encik-beku"]{--brand-primary:#0645A6;--brand-accent:#0645A6;--brand-tint:#FFFFFF;--brand-tint-2:#E4F4FF;--brand-dark:#00267F;--brand-highlight:#5EBAFF}
+[data-theme="scaffolding"]{--brand-primary:#000000;--brand-accent:#FC5C06;--brand-tint:#FFFCE1;--brand-tint-2:#FFFFFF;--brand-dark:#FC5C06;--brand-highlight:#F7E41C}
+[data-theme="kenduri"]{--brand-primary:#1A1A1A;--brand-accent:#F7650A;--brand-tint:#F7F7F7;--brand-tint-2:#FFF4EC;--brand-dark:#392A3B;--brand-highlight:#F7650A}
+[data-theme="merry"]{--brand-primary:#000000;--brand-accent:#FF0000;--brand-tint:#ECC8FF;--brand-tint-2:#FFFFFF;--brand-dark:#451C4D;--brand-highlight:#EFFF00}
+[data-theme="coliving"]{--brand-primary:#043431;--brand-accent:#FF602D;--brand-tint:#FFF9EB;--brand-tint-2:#FFFFFF;--brand-dark:#043431;--brand-highlight:#FFD000}
+[data-theme="ibnusina"]{--brand-primary:#053665;--brand-accent:#45B6EC;--brand-tint:#E4F4FF;--brand-tint-2:#E6F4F1;--brand-dark:#101213;--brand-highlight:#45B6EC}
+[data-theme="pilates"]{--brand-primary:#2F0937;--brand-accent:#9407B3;--brand-tint:#F2EBFC;--brand-tint-2:#E0CFF7;--brand-dark:#2E0936;--brand-highlight:#DB492B}
+[data-theme="potongpokok"]{--brand-primary:#223D11;--brand-accent:#F65203;--brand-tint:#F4F5EC;--brand-tint-2:#FED401;--brand-dark:#223D11;--brand-highlight:#FED401}
+[data-theme="revbike"]{--brand-primary:#0F3464;--brand-accent:#FC5C06;--brand-tint:#F7E41C;--brand-tint-2:#FEF8F4;--brand-dark:#324158;--brand-highlight:#F7E41C}
