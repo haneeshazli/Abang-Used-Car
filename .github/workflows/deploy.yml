@@ -38,9 +38,8 @@ jobs:
           git commit -qm "Deploy ${GITHUB_SHA::7}"
           git push -f "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${GITHUB_REPOSITORY}.git" gh-pages
 
-      # Cloudflare Pages: runs only once CLOUDFLARE_API_TOKEN and CLOUDFLARE_ACCOUNT_ID secrets are set
-      - name: Deploy to Cloudflare Pages
+      # Cloudflare: Workers Builds already deploys on push. This optional step only runs when
+      # CLOUDFLARE_API_TOKEN and CLOUDFLARE_ACCOUNT_ID secrets are set.
+      - name: Deploy to Cloudflare
         if: env.CLOUDFLARE_API_TOKEN != '' && env.CLOUDFLARE_ACCOUNT_ID != ''
-        run: |
-          npx --yes wrangler@3 pages project create abangusedcar-kl --production-branch main || true
-          npx --yes wrangler@3 pages deploy dist --project-name abangusedcar-kl --branch main
+        run: npx --yes wrangler@4 deploy

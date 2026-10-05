@@ -19,9 +19,9 @@ npm run preview   # serves dist/ locally
 Pushing to `main` runs `.github/workflows/deploy.yml`, which builds the site and then:
 
 - **GitHub Pages:** publishes `dist/` to the `gh-pages` branch. One-time setup: Settings → Pages → Source "Deploy from a branch" → `gh-pages` / root. The site then lives at https://haneeshazli.github.io/Abang-Used-Car/
-- **Cloudflare Pages:** deploys to the `abangusedcar-kl` project. This step only runs once the repo has the `CLOUDFLARE_API_TOKEN` and `CLOUDFLARE_ACCOUNT_ID` secrets (Settings → Secrets and variables → Actions). Create the token with the "Cloudflare Pages: Edit" permission.
+- **Cloudflare:** the repo is connected to the `abang-used-car` Worker through Workers Builds. Each push to `main` runs `npx wrangler deploy`, which builds the site and serves `dist/` as static assets (see `wrangler.toml`). The Cloudflare step in the workflow is optional and only runs if the `CLOUDFLARE_API_TOKEN` and `CLOUDFLARE_ACCOUNT_ID` secrets are set.
 
-To deploy manually instead: `npm run build && npx wrangler pages deploy dist --project-name abangusedcar-kl`
+To deploy manually: `npx wrangler deploy`
 
 ## ⚠️ Placeholder content to replace
 

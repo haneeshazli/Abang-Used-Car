@@ -1,3 +1,9 @@
-name = "abangusedcar-kl"
+# Cloudflare Workers static-assets site (Workers Builds, connected to this repo).
+name = "abang-used-car"
 compatibility_date = "2026-10-01"
-pages_build_output_dir = "dist"
+
+[build]
+command = "npm run build"
+
+[assets]
+directory = "./dist"
