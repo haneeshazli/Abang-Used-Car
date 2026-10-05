@@ -1,5 +1,5 @@
 # Cloudflare Workers static-assets site (Workers Builds, connected to this repo).
-name = "abang-used-car"
+name = "abangcar"
 compatibility_date = "2026-10-01"
 
 [build]
