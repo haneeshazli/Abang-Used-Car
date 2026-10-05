@@ -14,18 +14,14 @@ npm run build     # outputs dist/
 npm run preview   # serves dist/ locally
 ```
 
-## Deploy to Cloudflare Pages
+## Deploy
 
-**Git integration (recommended):** in Cloudflare dashboard → Workers & Pages → Create → Pages → Connect to Git, pick this repo, then set:
-- Build command: `npm run build`
-- Build output directory: `dist`
+Pushing to `main` runs `.github/workflows/deploy.yml`, which builds the site and then:
 
-**Or from the CLI:**
+- **GitHub Pages:** publishes `dist/` to the `gh-pages` branch. One-time setup: Settings → Pages → Source "Deploy from a branch" → `gh-pages` / root. The site then lives at https://haneeshazli.github.io/Abang-Used-Car/
+- **Cloudflare Pages:** deploys to the `abangusedcar-kl` project. This step only runs once the repo has the `CLOUDFLARE_API_TOKEN` and `CLOUDFLARE_ACCOUNT_ID` secrets (Settings → Secrets and variables → Actions). Create the token with the "Cloudflare Pages: Edit" permission.
 
-```bash
-npm run build
-npx wrangler pages deploy dist --project-name abangusedcar-kl
-```
+To deploy manually instead: `npm run build && npx wrangler pages deploy dist --project-name abangusedcar-kl`
 
 ## ⚠️ Placeholder content to replace
 
