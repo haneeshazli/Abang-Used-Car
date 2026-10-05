@@ -1,0 +1,196 @@
+/* Wix Madefor Display + Text — self-hosted from Google Fonts (latin subset, variable weight 400–800). */
+@font-face{font-family:'Wix Madefor Display';font-style:normal;font-weight:400 800;font-display:swap;src:url('fonts/WixMadeforDisplay.woff2') format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}
+@font-face{font-family:'Wix Madefor Text';font-style:normal;font-weight:400 800;font-display:swap;src:url('fonts/WixMadeforText.woff2') format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}
+
+/* Utopia Lead-Gen — colour tokens.
+   Shared conversion palette across the Utopia Group portfolio sites (Wix lead-gen pages).
+   Brand slots (--brand-*) are re-pointed per site in themes.css. */
+:root{
+/* Conversion — WhatsApp is THE primary CTA on every portfolio page */
+--wa-green:#24CC63;
+--wa-green-alt:#25D366;
+--wa-green-hover:#1FB457;
+--wa-on:#FFFFFF;
+
+/* Shared Wix portfolio accents (recur on 6+ sites) */
+--orange-500:#FC5C06;
+--orange-450:#FF5B00;
+--orange-400:#F7650A;
+--yellow-400:#F7E41C;
+--yellow-300:#FED401;
+--marker-yellow:#EFFF00;
+--navy-600:#324158;
+--navy-800:#0F3464;
+--red-600:#FF0000;
+--price-red:#A30232;
+
+/* Neutrals */
+--black:#000000;
+--ink-900:#101213;
+--ink-800:#2B3032;
+--ink-700:#2F2E2E;
+--ink-600:#323232;
+--ink-500:#5E5371;
+--gray-400:#A0A09F;
+--gray-300:#C9C6D0;
+--gray-200:#D3D3DA;
+--gray-100:#EDF2F4;
+--gray-50:#FAFAFA;
+--white:#FFFFFF;
+
+/* Warm/cool section tints */
+--cream-50:#FFFCE1;
+--cream-100:#FFF9EB;
+--peach-50:#FEF8F4;
+--sky-50:#E4F4FF;
+--sky-100:#D0E8FF;
+--mint-50:#E6F4F1;
+--lavender-50:#F2EBFC;
+--lavender-100:#ECC8FF;
+
+/* Semantic */
+--star:#FBBE01;
+--success:#31B645;
+--link:#0D81F0;
+
+/* Brand slots (defaults = navy/orange — the most common portfolio pairing) */
+--brand-primary:#324158;
+--brand-accent:#FC5C06;
+--brand-tint:#FEF8F4;
+--brand-tint-2:#FFFCE1;
+--brand-dark:#000000;
+--brand-on-dark:#FFFFFF;
+--brand-highlight:#F7E41C;
+
+/* Semantic aliases */
+--text-heading:var(--brand-primary);
+--text-body:var(--ink-800);
+--text-muted:#5E6470;
+--text-on-dark:#FFFFFF;
+--text-accent:var(--brand-accent);
+--surface-page:#FFFFFF;
+--surface-tint:var(--brand-tint);
+--surface-tint-2:var(--brand-tint-2);
+--surface-dark:var(--brand-dark);
+--surface-card:#FFFFFF;
+--border-card:rgba(201,198,208,.6);
+--border-strong:#000000;
+--cta-bg:var(--wa-green);
+--cta-fg:var(--wa-on);
+}
+
+/* Typography — Wix Madefor Display (headlines, prices) + Wix Madefor Text (body).
+   Mobile-first scale measured from the 390px captures; desktop values from the Wix desktop builds. */
+:root{
+--font-display:'Wix Madefor Display','Helvetica Neue',Helvetica,Arial,sans-serif;
+--font-text:'Wix Madefor Text','Helvetica Neue',Helvetica,Arial,sans-serif;
+--font-cta:'Wix Madefor Display',Helvetica,Arial,sans-serif;
+
+/* mobile (default) */
+--fs-display:30px;   /* hero H1 */
+--fs-h2:26px;        /* section title */
+--fs-h3:21px;        /* card / product title */
+--fs-h4:18px;        /* feature title, step title */
+--fs-price:26px;     /* big price */
+--fs-lead:16px;      /* hero subtext */
+--fs-body:15px;
+--fs-small:13px;
+--fs-micro:11px;     /* promo bar, legal, tag chips */
+--fs-cta:17px;       /* WhatsApp button label */
+--fs-phone:16px;     /* phone number under CTA */
+
+--fw-regular:400; /* @kind font */
+--fw-medium:500; /* @kind font */
+--fw-bold:700; /* @kind font */
+--fw-black:800; /* @kind font */
+
+--lh-tight:1.18; /* @kind font */
+--lh-snug:1.3; /* @kind font */
+--lh-body:1.5; /* @kind font */
+--ls-tight:-0.01em; /* @kind font */
+}
+@media (min-width:768px){
+:root{
+--fs-display:48px;
+--fs-h2:40px;
+--fs-h3:28px;
+--fs-h4:22px;
+--fs-price:37px;
+--fs-lead:18px;
+--fs-body:16px;
+--fs-small:14px;
+--fs-cta:18px;
+--fs-phone:18px;
+}
+}
+
+/* Spacing, radii, shadows, motion, layout. Values copied from the portfolio audit (Wix builds). */
+:root{
+--space-1:4px;
+--space-2:8px;
+--space-3:12px;
+--space-4:16px;
+--space-5:20px;
+--space-6:24px;
+--space-8:32px;
+--space-10:40px;
+--space-12:48px;
+--space-16:64px;
+
+--gutter-mobile:20px;     /* side padding at 390px */
+--section-y-mobile:48px;  /* vertical rhythm between bands */
+--section-y-desktop:80px;
+--container:980px;        /* Wix content column */
+--mobile-width:390px;
+
+/* Radii */
+--radius-xs:5px;   /* card WhatsApp, outline 'Butiran Lanjut', package cards */
+--radius-cta:7px;  /* the shared WhatsApp button */
+--radius-sm:10px;  /* language selector, secondary */
+--radius-md:15px;  /* product / USP cards */
+--radius-lg:20px;  /* feature cards, gallery */
+--radius-xl:30px;  /* soft service cards (Merry, Ibnu Sina) */
+--radius-pill:50px;/* price pills, nav pill */
+--radius-full:9999px;
+
+/* Shadows — Wix '0 1px 4px' family */
+--shadow-card:0 1px 4px rgba(0,0,0,.21);
+--shadow-card-strong:0 1px 4px rgba(0,0,0,.6);
+--shadow-soft:0 1px 3px rgba(0,0,0,.5);
+--shadow-header:0 0 5px rgba(0,0,0,.25);
+--shadow-float:0 2px 10px rgba(0,0,0,.18);
+--shadow-pill:0 4px 10px rgba(252,92,6,.35);
+
+/* Borders */
+--border-card-width:1px; /* @kind spacing */
+--border-hero-card:3px solid #000; /* @kind other */
+--border-outline-cta:2px; /* @kind spacing */
+
+/* Motion — Wix default: no easing curves, simple 0.2s */
+--ease:ease; /* @kind other */
+--dur-fast:.2s; /* @kind other */
+--dur-med:.4s; /* @kind other */
+}
+
+/* Per-site brand themes. Wrap a page (or any subtree) in data-theme="…" to re-skin.
+   Only the --brand-* slots change; WhatsApp green, type and layout stay fixed across the group. */
+[data-theme="lampu"]{--brand-primary:#074E92;--brand-accent:#FF5B00;--brand-tint:#FFFCE1;--brand-tint-2:#D0E8FF;--brand-dark:#000000;--brand-highlight:#F7E41C}
+[data-theme="encik-beku"]{--brand-primary:#0645A6;--brand-accent:#0645A6;--brand-tint:#FFFFFF;--brand-tint-2:#E4F4FF;--brand-dark:#00267F;--brand-highlight:#5EBAFF}
+[data-theme="scaffolding"]{--brand-primary:#000000;--brand-accent:#FC5C06;--brand-tint:#FFFCE1;--brand-tint-2:#FFFFFF;--brand-dark:#FC5C06;--brand-highlight:#F7E41C}
+[data-theme="kenduri"]{--brand-primary:#1A1A1A;--brand-accent:#F7650A;--brand-tint:#F7F7F7;--brand-tint-2:#FFF4EC;--brand-dark:#392A3B;--brand-highlight:#F7650A}
+[data-theme="merry"]{--brand-primary:#000000;--brand-accent:#FF0000;--brand-tint:#ECC8FF;--brand-tint-2:#FFFFFF;--brand-dark:#451C4D;--brand-highlight:#EFFF00}
+[data-theme="coliving"]{--brand-primary:#043431;--brand-accent:#FF602D;--brand-tint:#FFF9EB;--brand-tint-2:#FFFFFF;--brand-dark:#043431;--brand-highlight:#FFD000}
+[data-theme="ibnusina"]{--brand-primary:#053665;--brand-accent:#45B6EC;--brand-tint:#E4F4FF;--brand-tint-2:#E6F4F1;--brand-dark:#101213;--brand-highlight:#45B6EC}
+[data-theme="pilates"]{--brand-primary:#2F0937;--brand-accent:#9407B3;--brand-tint:#F2EBFC;--brand-tint-2:#E0CFF7;--brand-dark:#2E0936;--brand-highlight:#DB492B}
+[data-theme="potongpokok"]{--brand-primary:#223D11;--brand-accent:#F65203;--brand-tint:#F4F5EC;--brand-tint-2:#FED401;--brand-dark:#223D11;--brand-highlight:#FED401}
+[data-theme="revbike"]{--brand-primary:#0F3464;--brand-accent:#FC5C06;--brand-tint:#F7E41C;--brand-tint-2:#FEF8F4;--brand-dark:#324158;--brand-highlight:#F7E41C}
+
+/* Minimal element defaults so cards and kits pick up the brand type. */
+html{-webkit-text-size-adjust:100%}
+body{margin:0;font-family:var(--font-text);font-size:var(--fs-body);line-height:var(--lh-body);color:var(--text-body);background:var(--surface-page);-webkit-font-smoothing:antialiased}
+h1,h2,h3,h4{font-family:var(--font-display);font-weight:var(--fw-black);line-height:var(--lh-tight);color:var(--text-heading);margin:0;text-wrap:balance}
+p{margin:0;text-wrap:pretty}
+a{color:var(--link)}
+a:hover{color:var(--brand-accent)}
+img{max-width:100%;display:block}
+*,*::before,*::after{box-sizing:border-box}
